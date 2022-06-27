@@ -1,0 +1,122 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: #2b2020;
+}
+fieldset {
+
+    font-size:14px;
+    padding:1px;
+    width:1500px;
+    height: 700px;
+    line-height:1;
+    background:#F2F2F2 ;
+    top:-1802px;
+    Left:-2395px;
+}
+.box{
+    float:left;
+    background-color: #644F9C;
+    width:532px;
+    height: 486px;
+    top: 50%;
+    right: 50%;
+    margin-right: 55%;
+    transform: translate(35%, 15%) ;
+    background-image: url(01.png);
+    background-size: cover;
+    transition:10s;
+    animation-name:animate;
+    animation-direction:alternate-reverse;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    ;
+}
+.rbox{
+    float:right;
+    border-radius: 36px;
+    background-color: #ceb9b9;
+    width:532px;
+    height: 486px;
+    top: 289px;
+    left: 922px;
+    margin-right: 25%;
+    transform: translate(55%, -85%) ;
+}
+.rtxt{
+
+    width: 104px;
+    height: 28.93px;
+    left: 994px;
+    top: 375px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: 0.15em;
+    color: #404040;    
+    animation:fall 3.5s forwards;
+    transform: translate(60%, 330%) ;
+
+}
+.cen {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    padding-top:35px;
+    color: #404040;
+    transform: translate(10%, 35%) ;
+
+}
+@keyframes fall{
+    100%{
+        transform: translativeY(0);
+    }
+}
+.rtext h4:nth-child(2){
+    animation-delay:0.7s;
+}
+.rtext h4:nth-child(3){
+    animation-delay:1.4s;
+}
+.rtext h4:nth-child(4){
+    animation-delay:2.1s;
+}
+.rtext h4:nth-child(5){
+    animation-delay:2.8s;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(01.png);
+    }
+    20%{
+        background-image: url(02.png);
+    }
+    30%{
+        background-image: url(03.png);
+    }
+    30%{
+        background-image: url(4.png);
+    }
+    30%{
+        background-image: url(5.png);
+    }
+    30%{
+        background-image: url(6.jpg);
+    }
+}
